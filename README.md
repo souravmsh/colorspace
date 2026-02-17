@@ -45,7 +45,7 @@ A Visual Studio Code extension that automatically assigns different colors to di
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd vscode-workspace-color
+cd colorspace
 
 # Install dependencies
 npm install

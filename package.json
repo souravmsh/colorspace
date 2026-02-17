@@ -3,7 +3,7 @@
     "displayName": "ColorSpace",
     "description": "Automatically assign different colors to different workspaces for easy visual distinction",
     "version": "1.0.0",
-    "publisher": "sourav-diubd",
+    "publisher": "souravmsh",
     "author": "Shohrab Hossain <sourav.diubd@gmail.com>",
     "engines": {
         "vscode": "^1.75.0"

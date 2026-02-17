@@ -1,108 +1,112 @@
 {
-    "name": "colorspace",
-    "displayName": "ColorSpace",
-    "description": "Automatically assign different colors to different workspaces for easy visual distinction",
-    "version": "1.0.0",
-    "publisher": "souravmsh",
-    "author": "Shohrab Hossain <sourav.diubd@gmail.com>",
-    "engines": {
-        "vscode": "^1.75.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "keywords": [
-        "workspace",
-        "color",
-        "theme",
-        "sidebar",
-        "project"
-    ],
-    "activationEvents": [
-        "onStartupFinished"
-    ],
-    "main": "./out/extension.js",
-    "contributes": {
-        "viewsContainers": {
-            "activitybar": [
-                {
-                    "id": "colorspace",
-                    "title": "ColorSpace",
-                    "icon": "resources/icon.svg"
-                }
-            ]
-        },
-        "views": {
-            "colorspace": [
-                {
-                    "id": "colorspacePanel",
-                    "name": "Workspace Colors",
-                    "type": "webview"
-                }
-            ]
-        },
-        "commands": [
-            {
-                "command": "colorspace.changeColor",
-                "title": "ColorSpace: Change Workspace Color"
-            },
-            {
-                "command": "colorspace.resetColor",
-                "title": "ColorSpace: Reset Workspace Color"
-            },
-            {
-                "command": "colorspace.randomColor",
-                "title": "ColorSpace: Pick Random Color"
-            },
-            {
-                "command": "colorspace.addCustomColor",
-                "title": "ColorSpace: Add Custom Color"
-            }
-        ],
-        "configuration": {
-            "title": "ColorSpace",
-            "properties": {
-                "colorspace.autoColor": {
-                    "type": "boolean",
-                    "default": true,
-                    "description": "Automatically assign colors to new workspaces"
-                },
-                "colorspace.colorElements": {
-                    "type": "object",
-                    "default": {
-                        "activityBar": true,
-                        "sideBar": true,
-                        "statusBar": false
-                    },
-                    "description": "Choose which UI elements to color",
-                    "properties": {
-                        "activityBar": {
-                            "type": "boolean",
-                            "description": "Color the Activity Bar (left sidebar icons)"
-                        },
-                        "sideBar": {
-                            "type": "boolean",
-                            "description": "Color the Side Bar (file explorer)"
-                        },
-                        "statusBar": {
-                            "type": "boolean",
-                            "description": "Color the Status Bar (bottom bar)"
-                        }
-                    }
-                }
-            }
+  "name": "colorspace",
+  "displayName": "ColorSpace",
+  "description": "Automatically assign different colors to different workspaces for easy visual distinction",
+  "version": "1.0.0",
+  "publisher": "souravmsh",
+  "author": "Shohrab Hossain <sourav.diubd@gmail.com>",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/souravmsh/colorspace.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "workspace",
+    "color",
+    "theme",
+    "sidebar",
+    "project"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "colorspace",
+          "title": "ColorSpace",
+          "icon": "resources/icon.svg"
         }
+      ]
     },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "package": "vsce package"
+    "views": {
+      "colorspace": [
+        {
+          "id": "colorspacePanel",
+          "name": "Workspace Colors",
+          "type": "webview"
+        }
+      ]
     },
-    "devDependencies": {
-        "@types/node": "^18.0.0",
-        "@types/vscode": "^1.75.0",
-        "typescript": "^5.0.0",
-        "@vscode/vsce": "^2.19.0"
+    "commands": [
+      {
+        "command": "colorspace.changeColor",
+        "title": "ColorSpace: Change Workspace Color"
+      },
+      {
+        "command": "colorspace.resetColor",
+        "title": "ColorSpace: Reset Workspace Color"
+      },
+      {
+        "command": "colorspace.randomColor",
+        "title": "ColorSpace: Pick Random Color"
+      },
+      {
+        "command": "colorspace.addCustomColor",
+        "title": "ColorSpace: Add Custom Color"
+      }
+    ],
+    "configuration": {
+      "title": "ColorSpace",
+      "properties": {
+        "colorspace.autoColor": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically assign colors to new workspaces"
+        },
+        "colorspace.colorElements": {
+          "type": "object",
+          "default": {
+            "activityBar": true,
+            "sideBar": true,
+            "statusBar": false
+          },
+          "description": "Choose which UI elements to color",
+          "properties": {
+            "activityBar": {
+              "type": "boolean",
+              "description": "Color the Activity Bar (left sidebar icons)"
+            },
+            "sideBar": {
+              "type": "boolean",
+              "description": "Color the Side Bar (file explorer)"
+            },
+            "statusBar": {
+              "type": "boolean",
+              "description": "Color the Status Bar (bottom bar)"
+            }
+          }
+        }
+      }
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.75.0",
+    "typescript": "^5.0.0",
+    "@vscode/vsce": "^2.19.0"
+  }
 }

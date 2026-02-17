@@ -33,7 +33,7 @@
         {
           "id": "colorspace",
           "title": "ColorSpace",
-          "icon": "resources/icon.png"
+          "icon": "resources/icon.svg"
         }
       ]
     },

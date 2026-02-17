@@ -4,6 +4,7 @@
   "description": "Automatically assign different colors to different workspaces for easy visual distinction",
   "version": "1.0.0",
   "publisher": "souravmsh",
+  "icon": "resources/icon.png",
   "author": "Shohrab Hossain <sourav.diubd@gmail.com>",
   "engines": {
     "vscode": "^1.75.0"
@@ -32,7 +33,7 @@
         {
           "id": "colorspace",
           "title": "ColorSpace",
-          "icon": "resources/icon.svg"
+          "icon": "resources/icon.png"
         }
       ]
     },

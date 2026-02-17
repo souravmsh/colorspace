@@ -1,4 +1,4 @@
-# ColorSpace
+# ColorSpace :: Unique Workspace Colors for VS Code
 
 A Visual Studio Code extension that automatically assigns different colors to different workspaces, making it easy to visually distinguish between multiple projects. Features a dedicated sidebar panel for managing workspace colors with both preset and custom color schemes.
 
